@@ -2,11 +2,11 @@
 
 To clone:
 
-`git@github.com:RedExtreme12/ProductLabTask_2.git` – SSH
+`git clone git@github.com:RedExtreme12/ProductLabTask_2.git` – SSH
 
 or
 
-`https://github.com/RedExtreme12/ProductLabTask_2.git` – HTTPS
+`git clone https://github.com/RedExtreme12/ProductLabTask_2.git` – HTTPS
 
 ## How to run locally
 1. You must have Docker installed
