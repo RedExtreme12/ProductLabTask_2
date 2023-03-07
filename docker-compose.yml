@@ -1,0 +1,27 @@
+services:
+  web-app:
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./core:/core
+    environment:
+      - DB_HOST=database
+      - DB_NAME=dbname
+      - DB_USER=dbuser
+      - DB_PASS=pass
+      - SECRET_KEY=django-insecure-7w-q7tn&#7)g1hm-(1@gr7_*hendzpows_*zwftnoabyz+02)9
+    command: >
+      sh -c "python manage.py makemigrations &&
+      python manage.py migrate &&
+      python -m uvicorn config.asgi:application --host 0.0.0.0 --port 8000"
+    depends_on:
+      - database
+
+  database:
+    image: "postgres:14.6-alpine"
+    environment:
+      - POSTGRES_DB=dbname
+      - POSTGRES_USER=dbuser
+      - POSTGRES_PASSWORD=pass
