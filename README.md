@@ -1,5 +1,8 @@
 # ProductLabTask_2
 
+**My email:** dmitiry.rogozenko@gmail.com
+**Rogozenko Dmitriy Vadzimavich**
+
 To clone:
 
 `git clone git@github.com:RedExtreme12/ProductLabTask_2.git` – SSH
@@ -16,5 +19,3 @@ or
 ## Other information
 **Important point!** Product information is stored on different servers (wildberries), so requests can be to different wilberry servers. The API is based on basket-05.wb.ru. I noticed that the products stored there start with 7. For example, 75240253 or 73512949.
 The API can and should be improved, I hope that the code will be interesting to read :)
-
-My email: dmitiry.rogozenko@gmail.com
